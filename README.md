@@ -4,6 +4,7 @@
 ## Overview
 
 <!-- What does this pipeline do? -->
+This project builds an ETL pipeline using Python, PostgreSQL, and Pandas to extract, transform, and load customer analytics data. It generates key metrics such as total revenue and order counts, applies data validation checks, and outputs the results to both a database table and a CSV file.
 
 ## Setup
 
@@ -32,10 +33,26 @@ python etl_pipeline.py
 
 <!-- What does customer_analytics.csv contain? -->
 
+Starting ETL pipeline...
+Extracting data...
+Transforming data...
+Validating data...
+no_nulls: PASS
+positive_revenue: PASS
+no_duplicates: PASS
+valid_orders: PASS
+Loading data...
+Loaded 100 rows into database and CSV
+ETL pipeline completed successfully!
+
 ## Quality Checks
 
 <!-- What validations are performed and why? -->
-
+Validating data...
+no_nulls: Data validation: PASS
+positive_revenue: Data validation: PASS
+no_duplicates: Data validation: PASS
+valid_orders: Data validation: PASS
 ---
 
 ## License
